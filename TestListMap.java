@@ -15,7 +15,6 @@ public class TestListMap
 			Map<String, Object> map = new HashMap<String, Object>();
 			map.put("name", names[i]);
 			map.put("desc", descs[i]);
-			System.out.println("map=====" + map);
 			data.add(map);
 		}
 		System.out.println("data=====" + data);
