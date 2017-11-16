@@ -1,13 +1,10 @@
 import java.io.*;
 import java.util.Scanner; 
 import java.util.*;
-
-
 public class TestListMap
 {
 	public static void main(String [] args)
 	{
-		
 		String[] names={"xiaoming","xiaohong","xiaoqiang","xiaogang","xiaowang"};
 		String[] descs={"like basketball", "like football","like pingpang", "like basketball", "like football" };
 		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
@@ -17,7 +14,7 @@ public class TestListMap
 			map.put("desc", descs[i]);
 			data.add(map);
 		}
-		System.out.println("data=====" + data);
+		//System.out.println("data=====" + data);
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("name", "jinyangyang");
 		map.put("like", "like basketball and xiangqi");
@@ -63,12 +60,11 @@ public class TestListMap
 		while(ited.hasNext()){
 			Map<String, Object> mapd = ited.next();
 			int hascode = mapd.hashCode();
-			System.out.println("hascode is "+hascode);
-			System.out.println("mapd is "+mapd);
+			//System.out.println("hascode is "+hascode);
+			//System.out.println("mapd is "+mapd);
 			mapd.clear();
 		}
 		System.out.println("data after after after is "+data);
-		
 		Iterator<Map<String, Object>> itee = data.iterator();
 		System.out.println("itee.hasNext() 1 is "+itee.hasNext());
 		System.out.println("itee.hasNext() 2 is "+itee.hasNext());
